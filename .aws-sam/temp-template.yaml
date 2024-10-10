@@ -1,0 +1,11 @@
+Resources:
+  Function:
+    Type: AWS::Serverless::Function
+    Properties:
+      Timeout: 300
+      MemorySize: 128
+      Handler: handler
+      CodeUri: C:\Users\kristin.barlow\go\src\github\MyProjects\partial-batch-response-lambda-poc\hello-world
+      Runtime: go1.x
+      Architectures:
+        - x86_64
